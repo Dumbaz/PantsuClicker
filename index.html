@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Pantsu Clicker</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div ng-app="myApp" ng-controller="myCtrl">
+
+            <img src="img/pantsu/pantsu_1.png"  width="120px" ng-click="count = count + 1">{{ count }}</img>
+            <img src="img/pantsu/pantsu_2.png"  width="120px" ng-click="count = count + 1">{{ count }}</img>
+            <img src="img/pantsu/pantsu_3.png"  width="120px" ng-click="count = count + 1">{{ count }}</img>
+            <img src="img/pantsu/pantsu_4.png"  width="120px" ng-click="count = count + 1">{{ count }}</img>
+
+        </div>
+        <script>
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function ($scope) {
+                $scope.count = 0;
+            });
+        </script>
+    </main>
+</body>
+
+</html>

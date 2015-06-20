@@ -1,0 +1,15 @@
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:beige;
+    width: 1400px;
+    height: 900px;
+}
+
+#game-window {
+    width: 1000px;
+    height: 900px;
+    background-color:darksalmon
+}
