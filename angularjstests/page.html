@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="incrementer.js"></script>
+</head>
+<body>
+<div ng-app="incrementer" ng-controller="controller">
+	<up-vote min="model.min" max="model.max" value="model.value"></up-vote>
+	{{model.value}}
+</div>
+
+</body>
+</html>
